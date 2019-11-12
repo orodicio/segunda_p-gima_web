@@ -1,0 +1,67 @@
+/*aside para las dos primeras medidas*/
+
+aside {
+    display: none;
+}
+
+@font-face {
+    font-family: letraCuerpo;
+    src: url(../fuentes/Sublime-Regular.ttf);
+}
+
+@media all and (min-width: 1024px) {
+    /* Estilos para anchos
+superiores a 1024px */
+    /*fondo*/
+    aside {
+        display: block;
+        float: left;
+        position: relative;
+        width: 32.3vw;
+        height: 78.3vw;
+        font-size: 1vw;
+        font-family: letraCuerpo;
+        padding-left: 1vw;
+        margin-left: 1vw;
+        margin-top: 1vw;
+        padding-top: 0.5vw;
+        background-color: rgba(246, 241, 235, 0.555);
+        border: 3px dotted rgb(0, 0, 0);
+        box-sizing: border-box;
+    }
+    /*titulo general*/
+    #tituloAside {
+        font-family: how;
+        font-size: 4vw;
+        text-align: center;
+    }
+    /*bloques*/
+    .bloqueEnlaces {
+        width: 31vw;
+        line-height: 2.1vw;
+        margin-top: 2vw;
+        font-size: 1.5vw;
+    }
+    /*titulo bloques*/
+    .bloqueEnlaces::first-line {
+        font-size: 1.7vw;
+        font-weight: bold;
+    }
+    .bloqueEnlaces span {
+        font-size: 1.7vw;
+        font-weight: bold;
+    }
+    /*Estilo de enlaces*/
+    .bloqueEnlaces a:visited {
+        color: rgba(57, 63, 116, 0.966);
+    }
+    .bloqueEnlaces a:active {
+        color: rgb(255, 232, 57);
+    }
+    .bloqueEnlaces a:link {
+        color: rgba(57, 63, 116, 0.966);
+    }
+    .bloqueEnlaces a:hover {
+        color: rgb(255, 232, 57);
+    }
+}

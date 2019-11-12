@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="css/fondo.css">
+    <link rel="stylesheet" href="css/headerPelicula.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/sectionFormulario.css">
+    <link rel="stylesheet" href="css/asideFormulario.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+</head>
+
+<body>
+    <div id="fondo">
+        <div id="imagenfondo">
+            <header>
+                <div id=logo>
+                    <img src="images/logoHarry.png" alt=logoHarry/>
+                </div>
+                <div id="titulo">
+                    <p>Formulario</p>
+                </div>
+                <div id="busqueda">
+                    <form method="POST">
+                        <input type="search" id="miBusqueda" name="q">
+                        <button><img src="images/lupa.png" alt="lupa"></button>
+                    </form>
+                </div>
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./laAutora.html">Sobre la autora</a></li>
+                    <li><a href="./elLibro.html">El libro</a></li>
+                    <li><a href="./laPelicula.html">La pelicula</a></li>
+                    <li><a href="./formulario.html">Formulario</a></li>
+                </ul>
+            </nav>
+            <div id="fondoGeneral">
+                <section>
+                    <article>
+                        <div id="texto">
+                            <div id="advertencia">
+                                <p>LA INFORMACIÓN RECOGIDA EN CUESTIONARIO NO SE UTILIZARÁ CON FINES COMERCIALES. ES SÓLO PARA QUE LA AUTORA TENGA UN PEQUEÑO FEEDBACK DE SUS LECTORES. ES COMPLETAMENTE VOLUNTARIO.</p>
+                            </div>
+                            <div id="formulario">
+                                <form method="GET">
+                                    <table id="tabla1">
+                                        <tr>
+                                            <td colspan="2">Nombre:</td>
+                                            <td colspan="3"><input type="text" name="nombre" maxlength="30" required></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">Apellidos:</td>
+                                            <td colspan="3"><input type="text" name="apellidos" maxlength="30" required></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2" rowspan="3">sexo:</td>
+                                            <td colspan="2" class="alignRight">Hombre:</td>
+                                            <td><input type="radio" name="sexo" value="hombre"></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2" class="alignRight">Mujer: </td>
+                                            <td><input type="radio" name="sexo" value="mujer"></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2" class="alignRight">Otro:</td>
+                                            <td><input type="radio" name="sexo" value="otro"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>¿Ha leido el libro?</td>
+                                            <td class="alignRight">Si</td>
+                                            <td><input type="checkbox" name="libro" value="si"></td>
+                                            <td class="alignRight">No</td>
+                                            <td><input type="checkbox" name="libro" value="no"></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">En caso afirmativo, valore del 1 al diez:</td>
+                                            <td colspan="3"><input type="range" name="opinionLibro" min="1" max="10"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>¿Ha visto las peliculas?</td>
+                                            <td class="alignRight">Si</td>
+                                            <td><input type="checkbox" name="pelicula" value="si"></td>
+                                            <td class="alignRight">No</td>
+                                            <td><input type="checkbox" name="pelicula" value="no"></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">En caso afirmativo, valore del 1 al diez:</td>
+                                            <td colspan="3"><input type="range" name="opinionPelicula" min="1" max="10"></td>
+                                        </tr>
+                                    </table>
+                                    <table id="tabla2">
+                                        <tr>
+                                            <td>Libros leidos:</td>
+                                            <td>
+                                                <select name="Librosleidos[]" multiple>
+                                                                    <option value="La piedra filosofal">Harry Potter y la piedra filosofal</option>
+                                                                    <option value="La cámara secreta">Harry Potter y la cámara secreta</option>
+                                                                    <option value="El prisionero de Azkaban" selected>Harry Potter y el prisionero de Azkaban</option>
+                                                                    <option value="El cáliz de fuego">Harry Potter y el cáliz de fuego</option>
+                                                                    <option value="La orden del Fénix">Harry Potter y la orden del Fénix</option>
+                                                                    <option value="El misterio del príncipe">Harry Potter y el misterio del príncipe</option>
+                                                                    <option value="Las reliquias de la muerte">Harry Potter y las reliquias de la muerte</option>
+                                                            </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Películas vistas:</td>
+                                            <td>
+                                                <select name="peliculasVistas[]" multiple>
+                                                                    <option value="La piedra filosofal">Harry Potter y la piedra filosofal</option>
+                                                                    <option value="La cámara secreta">Harry Potter y la cámara secreta</option>
+                                                                    <option value="El prisionero de Azkaban" selected>Harry Potter y el prisionero de Azkaban</option>
+                                                                    <option value="El cáliz de fuego">Harry Potter y el cáliz de fuego</option>
+                                                                    <option value="La orden del Fénix">Harry Potter y la orden del Fénix</option>
+                                                                    <option value="El misterio del príncipe">Harry Potter y el misterio del príncipe</option>
+                                                                    <option value="Las reliquias de la muerte">Harry Potter y las reliquias de la muerte</option>
+                                                            </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Código postal:</td>
+                                            <td><input type="text" name="CP" maxlength="30"></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">Comentarios adicionales:</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2"><textarea name="comentarios" placeholder="introduzca su comentario aquí" maxlength="144" cols="10" rows="7" wrap="hard"></textarea></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="submit" name="enviar" value="enviar" class="boton1"></td>
+                                            <td> <input type="reset" name="borrar" value="borrar" class="boton2"></td>
+                                        </tr>
+                                    </table>
+                                </form>
+                            </div>
+                            <div id="cajaAnimacion">
+                                <p>snitch</p>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+                <aside>
+                    <div id="tituloAside">
+                        <p>Enlaces Relacionados:</p>
+                    </div>
+                    <div class="bloqueEnlaces">
+                        <p>Enlaces a las fuentes utilizadas:</p>
+                        <p><a href="https://fontmeme.com/es/fuente-de-harry-potter/">Font-meme</a></p>
+                        <p><a href="https://es.fonts2u.com/harry-potter.fuente">Fonts2u</a></p>
+                        <p><a href="http://hogwartsla.com/2016/06/22/fuentes-tipograficas/">Hogwartsla</a></p>
+                    </div>
+                    <div class="bloqueEnlaces">
+                        <p>Enlaces a los logos de Harry <span>Potter:</span></p>
+                        <p><a href="https://www.freeiconspng.com/images/harry-potter-logo">Freeiconspng</a></p>
+                        <p><a href="https://logoeps.com/harry-potter-vector-logo/29307/">logoeps</a></p>
+                    </div>
+                    <div class="bloqueEnlaces">
+                        <p>Enlaces a web oficiales:</p>
+                        <p><a href="https://www.wizardingworld.com/">Wizarding World: web oficial</a></p>
+                        <p><a href="https://harrypotter.fandom.com/wiki/Harry_Potter">Harry Potter wiki fandom</a></p>
+                        <p><a href="https://en.wikipedia.org/wiki/Harry_Potter">Entrada a wikipedia</a></p>
+                    </div>
+                    <div class="bloqueEnlaces">
+                        <p> Enlaces para descargarse los <span>libros:</span></p>
+                        <p><a href="https://www.luqueenterprises.com/descargar-harry-potter-libros-pdf-saga-completa-extras/">Luque enterprises</a></p>
+                        <p><a href="https://gorutlibrosgratispdf.blogspot.com/2015/11/harry-potter-coleccion-7-libros-pdf.html">Gorut Libros</a></p>
+                        <p><a href="https://harrypotterfanatic.com/audiobook/espanol/los-7-audiolibros-de-harry-potter-gratis/">Descargarse audiolibro: Harry Potter Fanatic</a></p>
+                    </div>
+                    <div class="bloqueEnlaces">
+                        <p>Criticas de la pelicula:</p>
+                        <p><a href="http://www.sensacine.com/peliculas/pelicula-29276/criticas-espectadores/mas-recientes/?page=2">Sensacine</a></p>
+                        <p>
+                            <a href="https://www.filmaffinity.com/es/reviews/1/423821.htm">Film Affinity</a></p>
+                        <p><a href="https://pasionporelcine.net/harry-potter/harry-potter-y-la-piedra-filosofal-resena-critica/">Pasión por el cine</a></p>
+                    </div>
+                    <div class="bloqueEnlaces">
+                        <p>Enlaces para ver la pelicula:</p>
+                        <p><a href="https://repelis.me/11/harry-potter-1-y-la-piedra-filosofal/">Repelis</a></p>
+                        <p><a href="https://pelisfox.tv/pelicula/harry-potter-y-la-piedra-filosofal/p007/">Pelis Fox</a></p>
+                    </div>
+                </aside>
+            </div>
+            <footer>
+                <div id="prototipo">
+                    <a href="pdf/prototipo.pdf" download="prototipo_Olalla_Rodicio.pdf"><img src="images/configuracion.png" alt="prototipoPDF" /></a>
+                </div>
+                <div id="redes">
+                    <div id="facebook">
+                        <a href="https://www.facebook.com/HarryPotterPeliculas/?brand_redir=156794164312"><img src="images/facebook.png" alt="facebook" /></a>
+                    </div>
+                    <div id="twitter">
+                        <a href="https://twitter.com/hashtag/harrypotter?lang=es"><img src="images/twitter.png" alt="twitter" /></a>
+                    </div>
+                    <div id="instagram">
+                        <a href="https://www.instagram.com/harrypotterfilm/?hl=es"><img src="images/instagram.png" alt="instagram" /></a>
+                    </div>
+                </div>
+                <div id="validacion">
+                    <a href="http://jigsaw.w3.org/css-validator/check/referer"><img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="¡CSS Válido!" /></a>
+                </div>
+                <div id="guia" class="animacion">
+                    <a href="pdf/guia_de_estilo.pdf" download="guiaDeEstilo_Olalla_Rodicio.pdf"><img src="images/pdf.png" alt="guia" /></a>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

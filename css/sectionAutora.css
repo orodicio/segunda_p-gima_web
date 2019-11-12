@@ -1,0 +1,240 @@
+#fondoGeneral {
+    position: relative;
+    float: left;
+}
+
+section {
+    position: relative;
+    float: left;
+    background-color: rgba(246, 241, 235, 0.555);
+    width: 96vw;
+    height: auto;
+    border: 3px dotted rgb(0, 0, 0);
+    box-sizing: border-box;
+    margin-left: 1vw;
+    margin-top: 2vw;
+}
+
+article {
+    position: relative;
+    float: left;
+    width: 96vw;
+}
+
+
+/*estilo del texto*/
+
+#texto {
+    position: relative;
+    float: left;
+    font-family: letraCuerpo;
+    width: 90vw;
+    text-align: justify;
+    text-indent: 2vw;
+    line-height: 7vw;
+    word-wrap: break-word;
+    padding: 4.5vw 3.5vw 0vw 1.5vw;
+    font-size: 4vw;
+}
+
+
+/*foto y estilo*/
+
+#foto {
+    position: relative;
+    float: left;
+    width: 90vw;
+    height: auto;
+    margin-top: 2vw;
+    margin-bottom: 3vw;
+    margin-left: 0.5vw;
+}
+
+#foto>img {
+    width: 85vw;
+    border: 3px dotted rgb(0, 0, 0);
+    box-sizing: border-box;
+}
+
+#texto>p::first-letter {
+    font-family: how;
+    font-size: 8vw;
+}
+
+
+/*animacion*/
+
+#cajaAnimacion {
+    position: relative;
+    float: left;
+    width: 96VW;
+    padding-top: 0vw;
+    padding-bottom: 3vw;
+}
+
+#cajaAnimacion>p {
+    position: relative;
+    width: 69vw;
+    float: left;
+    font-family: snitch;
+    font-size: 8vw;
+    animation-name: pajaritos;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+@keyframes pajaritos {
+    0% {
+        left: 0px;
+        top: 0px;
+    }
+    25% {
+        left: 7vw;
+        top: 2vw;
+    }
+    50% {
+        left: 14vw;
+        top: 0vw;
+    }
+    100% {
+        left: 23vw;
+        top: 2vw;
+    }
+}
+
+@font-face {
+    font-family: how;
+    src: url(../fuentes/Hogwwb__.TTF);
+}
+
+@font-face {
+    font-family: letraCuerpo;
+    src: url(../fuentes/Sublime-Regular.ttf);
+}
+
+@font-face {
+    font-family: snitch;
+    src: url(../fuentes/JLR\ Snitch.ttf);
+}
+
+@media all and (min-width: 768px) {
+    /* Estilos para anchos
+superiores a 768px */
+    section {
+        width: 97vw;
+        margin-top: 1vw;
+    }
+    article {
+        width: 97vw;
+    }
+    #foto {
+        width: 64vw;
+        height: 41vw;
+        margin-top: 0vw;
+        margin-bottom: 1vw;
+        margin-left: 0.5vw;
+    }
+    #foto>img {
+        width: 60vw;
+        border: 3px dotted rgb(0, 0, 0);
+        box-sizing: border-box;
+    }
+    #texto {
+        font-family: letraCuerpo;
+        width: 90vw;
+        text-align: justify;
+        text-indent: 1vw;
+        line-height: 3vw;
+        word-wrap: break-word;
+        font-size: 2vw;
+    }
+    #texto>p::first-letter {
+        font-size: 4vw;
+    }
+    #cajaAnimacion {
+        position: relative;
+        float: left;
+        width: 96VW;
+        padding-top: 2vw;
+        padding-bottom: 2vw;
+    }
+    @keyframes pajaritos {
+        0% {
+            left: 0px;
+            top: 0px;
+        }
+        25% {
+            left: 9vw;
+            top: 2vw;
+        }
+        50% {
+            left: 18vw;
+            top: 0vw;
+        }
+        100% {
+            left: 28vw;
+            top: 2vw;
+        }
+    }
+}
+
+@media all and (min-width: 1024px) {
+    /* Estilos para anchos
+superiores a 1024px */
+    section {
+        width: 64vw;
+    }
+    article {
+        width: 63vw;
+    }
+    #foto {
+        width: 30vw;
+        height: 19vw;
+        margin-top: 0vw;
+        margin-bottom: 0vw;
+        margin-left: 0.5vw;
+    }
+    #foto>img {
+        width: 28vw;
+        border: 3px dotted rgb(0, 0, 0);
+        box-sizing: border-box;
+    }
+    #texto {
+        width: 62vw;
+        line-height: 2vw;
+        font-size: 1vw;
+        padding: 1.5vw 0vw 0vw 0.5vw;
+    }
+    #texto>p::first-letter {
+        font-size: 3vw;
+    }
+    #cajaAnimacion {
+        width: 63.5vw;
+        padding-top: 0vw;
+        height: 4.9vw;
+    }
+    #cajaAnimacion>p {
+        width: 51vw;
+        font-size: 6vw;
+    }
+    @keyframes pajaritos {
+        0% {
+            left: 0px;
+            top: 0px;
+        }
+        25% {
+            left: 4vw;
+            top: 1vw;
+        }
+        50% {
+            left: 8vw;
+            top: 0vw;
+        }
+        100% {
+            left: 12vw;
+            top: 1vw;
+        }
+    }
+}

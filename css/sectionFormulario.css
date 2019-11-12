@@ -1,0 +1,327 @@
+#fondoGeneral {
+    position: relative;
+    float: left;
+}
+
+section {
+    position: relative;
+    float: left;
+    background-color: rgba(246, 241, 235, 0.555);
+    width: 96vw;
+    height: auto;
+    border: 3px dotted rgb(0, 0, 0);
+    box-sizing: border-box;
+    margin-left: 1vw;
+    margin-top: 2vw;
+}
+
+article {
+    position: relative;
+    float: left;
+    width: 96vw;
+}
+
+#texto {
+    position: relative;
+    float: left;
+    font-family: letraCuerpo;
+    width: 90vw;
+    padding: 1.5vw 3.5vw 0vw 1.5vw;
+}
+
+#advertencia {
+    position: relative;
+    float: left;
+    width: 90vw;
+    text-align: justify;
+    font-size: 3vw;
+    font-weight: 600;
+}
+
+#formulario {
+    border: 1px solid rgb(0, 0, 0);
+    position: relative;
+    float: left;
+    width: 91vw;
+    margin-bottom: 2vw;
+    margin-top: 2vw;
+    padding-bottom: 2.5vw;
+    padding-top: 2.5vw;
+}
+
+#tabla1 {
+    float: left;
+    position: relative;
+    width: 89vw;
+    height: auto;
+    text-align: left;
+    font-size: 3.5vw;
+    table-layout: fixed;
+    text-align: left;
+}
+
+#tabla1 td {
+    width: 7vw;
+    word-wrap: break-word;
+    padding: 0.5vw 1vw 0vw 1vw;
+}
+
+.alignRight {
+    text-align: right;
+}
+
+#tabla2 {
+    float: left;
+    position: relative;
+    width: 89vw;
+    height: auto;
+    font-size: 3.5vw;
+    table-layout: fixed;
+    text-align: left;
+}
+
+#tabla2 td {
+    width: 7vw;
+    word-wrap: break-word;
+    padding: 0.5vw 1vw 0vw 1vw;
+}
+
+#cajaAnimacion {
+    position: relative;
+    float: left;
+    width: 96VW;
+    padding-top: 0vw;
+    padding-bottom: 3vw;
+}
+
+#cajaAnimacion>p {
+    position: relative;
+    width: 69vw;
+    float: left;
+    font-family: snitch;
+    font-size: 8vw;
+    animation-name: pajaritos;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+@keyframes pajaritos {
+    0% {
+        left: 0px;
+        top: 0px;
+    }
+    25% {
+        left: 7vw;
+        top: 2vw;
+    }
+    50% {
+        left: 14vw;
+        top: 0vw;
+    }
+    100% {
+        left: 23vw;
+        top: 2vw;
+    }
+}
+
+@font-face {
+    font-family: how;
+    src: url(../fuentes/Hogwwb__.TTF);
+}
+
+@font-face {
+    font-family: letraCuerpo;
+    src: url(../fuentes/Sublime-Regular.ttf);
+}
+
+@font-face {
+    font-family: snitch;
+    src: url(../fuentes/JLR\ Snitch.ttf);
+}
+
+@media all and (min-width: 768px) {
+    /* Estilos para anchos
+superiores a 768px */
+    section {
+        width: 97vw;
+        margin-top: 1vw;
+    }
+    article {
+        width: 97vw;
+    }
+    #texto {
+        font-family: letraCuerpo;
+        width: 96vw;
+        line-height: 4vw;
+        padding: 0vw;
+    }
+    #formulario {
+        width: 93vw;
+        margin-bottom: 2vw;
+        margin-top: 2vw;
+        margin-left: 1.5vw;
+        padding-bottom: 2.5vw;
+        padding-top: 2.5vw;
+    }
+    #advertencia {
+        width: 93vw;
+        font-size: 2.5vw;
+        margin-left: 1.5vw;
+        margin-top: 2vw;
+    }
+    #tabla1 {
+        width: 90vw;
+        height: auto;
+        font-size: 2.5vw;
+    }
+    #tabla1 td {
+        width: 6vw;
+        word-wrap: break-word;
+        padding: 0vw;
+    }
+    #tabla2 {
+        width: 90vw;
+        height: auto;
+        font-size: 2.5vw;
+    }
+    #tabla2 td {
+        width: 6vw;
+        word-wrap: break-word;
+        padding: 0vw;
+    }
+    #tabla2 textarea {
+        width: 52vw;
+        margin-left: 18vw;
+        margin-top: 1vw;
+    }
+    .boton1 {
+        width: 12vw;
+        margin-left: 31vw;
+    }
+    .boton2 {
+        width: 12vw;
+    }
+    #cajaAnimacion {
+        position: relative;
+        float: left;
+        width: 96VW;
+        padding-top: 2vw;
+        padding-bottom: 3vw;
+    }
+    @keyframes pajaritos {
+        0% {
+            left: 0px;
+            top: 0px;
+        }
+        25% {
+            left: 9vw;
+            top: 2vw;
+        }
+        50% {
+            left: 18vw;
+            top: 0vw;
+        }
+        100% {
+            left: 28vw;
+            top: 2vw;
+        }
+    }
+}
+
+@media all and (min-width: 1024px) {
+    /* Estilos para anchos
+superiores a 1024px */
+    section {
+        width: 64vw;
+    }
+    article {
+        width: 64vw;
+    }
+    #texto {
+        width: 63vw;
+        line-height: 3vw;
+        padding: 1.5vw 0vw 0vw 0.5vw;
+        margin-top: 0vw;
+    }
+    #formulario {
+        width: 61vw;
+        margin-bottom: 2vw;
+        margin-top: 0vw;
+        margin-left: 0.5vw;
+        padding-bottom: 2.5vw;
+        padding-top: 0.5vw;
+    }
+    #advertencia {
+        width: 59vw;
+        font-size: 1.5vw;
+        margin-left: 1.5vw;
+        margin-top: 0vw;
+    }
+    #tabla1 {
+        width: 31vw;
+        height: auto;
+        font-size: 1.0vw;
+        border-right: 1px solid black;
+        padding-right: 2vw;
+        padding-left: 0.5vw;
+    }
+    #tabla1 td {
+        width: 1vw;
+        word-wrap: break-word;
+        padding: 0vw;
+    }
+    #tabla2 {
+        width: 30vw;
+        height: auto;
+        font-size: 1.0vw;
+        padding-right: 2vw;
+        padding-left: 0.5vw;
+        margin-top: 8vw;
+    }
+    #tabla2 td {
+        width: 1vw;
+        word-wrap: break-word;
+        padding: 0vw;
+    }
+    #tabla2 textarea {
+        width: 18vw;
+        margin-left: 5vw;
+        margin-top: 1vw;
+    }
+    .boton1 {
+        width: 7vw;
+        margin-left: 7vw;
+    }
+    .boton2 {
+        width: 7vw;
+    }
+    #cajaAnimacion {
+        width: 63.5vw;
+        padding-top: 0vw;
+        height: 3.5vw;
+    }
+    #cajaAnimacion>p {
+        width: 51vw;
+        font-size: 6vw;
+    }
+    @keyframes pajaritos {
+        0% {
+            left: 0px;
+            top: 0px;
+        }
+        25% {
+            left: 4vw;
+            top: 1vw;
+        }
+        50% {
+            left: 8vw;
+            top: 0vw;
+        }
+        100% {
+            left: 12vw;
+            top: 1vw;
+        }
+    }
+}

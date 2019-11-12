@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Index</title>
+    <link rel="stylesheet" href="css/fondo.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/section.css">
+    <link rel="stylesheet" href="css/aside.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+    <script>
+        var images = new Array("images/libro_af.jpeg", "images/jkrowling_af.png", "images/cartel cine_af.jpg");
+        var disparador;
+        var i = 0;
+
+        function cambio() {
+            disparador = window.setInterval(galeria, 2000);
+        }
+
+        function galeria() {
+            if (i < 3) {
+                img2 = images[i];
+                document.imgActual.src = img2;
+                i++;
+            } else {
+                i = 0;
+            }
+        }
+    </script>
+</head>
+
+<body onLoad="cambio()">
+    <div id="fondo">
+        <div id="imagenfondo">
+            <header>
+                <div id=logo>
+                    <img src="images/logoHarry.png" alt=logoHarry/>
+                </div>
+                <div id="titulo">
+                    <p>Harry Potter</p>
+                    <p><br>la piedra filosofal</p>
+                </div>
+                <div id="busqueda">
+                    <form method="POST">
+                        <input type="search" id="miBusqueda" name="q">
+                        <button><img src="images/lupa.png" alt="lupa"></button>
+                    </form>
+                </div>
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./laAutora.html">Sobre la autora</a></li>
+                    <li><a href="./elLibro.html">El libro</a></li>
+                    <li><a href="laPelicula.html">La pelicula</a></li>
+                    <li><a href="./formulario.html">Formulario</a></li>
+                </ul>
+            </nav>
+            <div id="fondoGeneral">
+                <section>
+                    <article>
+                        <div id="texto">
+                            <div id="galeria">
+                                <img src="images/libro_af.jpeg" alt="libro" name="imgActual" />
+                            </div>
+                            <p><span>¡Hola amigos!:</span></p>
+                            <br>
+                            <p>Esta es una página para todos aquellos amantes, de Harry Potter. En ella me voy a centrar en hablar un poco de este libro, que tantas horas de disfrute nos supuso para muchos.</p>
+                            <br>
+                            <p>En un principio, la idea era crear un sitio con todas las películas y los libros de esta saga, pero dado que, esa tarea es harto ardua (Son siete libros canónicos,más todo el resto relacionados con el universo Harry Potter)
+                                he decidido empezar con el primero y pediros opinión en un formulario sobre él. Dependiéndo de cómo me respondáis, haré el resto (o no). Así que sin más comencemos:</p>
+                            <br>
+                            <br>
+                            <cite>"It is important to remember that we all have magic within us"</cite>
+                            <br>
+                        </div>
+                        <div id="cajaAnimacion">
+                            <p>snitch</p>
+                        </div>
+                    </article>
+                </section>
+                <aside>
+                    <div id="tituloAside">
+                        <p>Enlaces Relacionados:</p>
+                    </div>
+                    <div class="bloqueEnlaces">
+                        <p>Enlaces a las fuentes utilizadas:</p>
+                        <p><a href="https://fontmeme.com/es/fuente-de-harry-potter/">Font-meme</a></p>
+                        <p><a href="https://es.fonts2u.com/harry-potter.fuente">Fonts2u</a></p>
+                        <p><a href="http://hogwartsla.com/2016/06/22/fuentes-tipograficas/">Hogwartsla</a></p>
+                    </div>
+                    <div class="bloqueEnlaces">
+                        <p>Enlaces a los logos de Harry Potter:</p>
+                        <p><a href="https://www.freeiconspng.com/images/harry-potter-logo">Freeiconspng</a></p>
+                        <p><a href="https://logoeps.com/harry-potter-vector-logo/29307/">logoeps</a></p>
+                    </div>
+                    <div class="bloqueEnlaces">
+                        <p>Enlaces a web oficiales:</p>
+                        <p><a href="https://www.wizardingworld.com/">Wizarding World: web oficial</a></p>
+                        <p><a href="https://harrypotter.fandom.com/wiki/Harry_Potter">Harry Potter wiki fandom</a></p>
+                        <p><a href="https://en.wikipedia.org/wiki/Harry_Potter">Entrada a wikipedia</a></p>
+                    </div>
+                    <div class="bloqueEnlaces">
+                        <p> Enlaces para descargarse los libros:</p>
+                        <p><a href="https://www.luqueenterprises.com/descargar-harry-potter-libros-pdf-saga-completa-extras/">Luque enterprises</a></p>
+                        <p><a href="https://gorutlibrosgratispdf.blogspot.com/2015/11/harry-potter-coleccion-7-libros-pdf.html">Gorut Libros</a></p>
+                        <p><a href="https://harrypotterfanatic.com/audiobook/espanol/los-7-audiolibros-de-harry-potter-gratis/">Descargarse audiolibro: Harry Potter Fanatic</a></p>
+                    </div>
+                    <div class="bloqueEnlaces">
+                        <p>Criticas de la pelicula:</p>
+                        <p><a href="http://www.sensacine.com/peliculas/pelicula-29276/criticas-espectadores/mas-recientes/?page=2">Sensacine</a></p>
+                        <p>
+                            <a href="https://www.filmaffinity.com/es/reviews/1/423821.htm">Film Affinity</a></p>
+                        <p><a href="https://pasionporelcine.net/harry-potter/harry-potter-y-la-piedra-filosofal-resena-critica/">Pasión por el cine</a></p>
+                    </div>
+                    <div class="bloqueEnlaces">
+                        <p>Enlaces para ver la pelicula:</p>
+                        <p><a href="https://repelis.me/11/harry-potter-1-y-la-piedra-filosofal/">Repelis</a></p>
+                        <p><a href="https://pelisfox.tv/pelicula/harry-potter-y-la-piedra-filosofal/p007/">Pelis Fox</a></p>
+                    </div>
+                </aside>
+            </div>
+            <footer>
+                <div id="prototipo">
+                    <a href="pdf/prototipo.pdf" download="prototipo_Olalla_Rodicio.pdf"><img src="images/configuracion.png" alt="prototipoPDF" /></a>
+                </div>
+                <div id="redes">
+                    <div id="facebook">
+                        <a href="https://www.facebook.com/HarryPotterPeliculas/?brand_redir=156794164312"><img src="images/facebook.png" alt="facebook" /></a>
+                    </div>
+                    <div id="twitter">
+                        <a href="https://twitter.com/hashtag/harrypotter?lang=es"><img src="images/twitter.png" alt="twitter" /></a>
+                    </div>
+                    <div id="instagram">
+                        <a href="https://www.instagram.com/harrypotterfilm/?hl=es"><img src="images/instagram.png" alt="instagram" /></a>
+                    </div>
+                </div>
+                <div id="validacion">
+                    <a href="http://jigsaw.w3.org/css-validator/check/referer"><img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="¡CSS Válido!" /></a>
+                </div>
+                <div id="guia" class="animacion">
+                    <a href="pdf/guia_de_estilo.pdf" download="guiaDeEstilo_Olalla_Rodicio.pdf"><img src="images/pdf.png" alt="guia" /></a>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
